@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>STUDENTS' REGISTRATION FORM</h1>
+<form>
+   <label for="fname">Full Name:</label>
+   <input type="text" placeholder="Your Full Name"> 
+<br> <br>   
+   <label for="matno">Mat.No:</label>
+   <input type="text" placeholder="Enter Mat.No">
+<br> <br>
+   <label for="Phoneno">Phone No.</label>
+   <input type="number" placeholder="Enter Phone No.">
+   
+<br> <br>
+ <label for="dob">Date of Birth.</label>
+<input type="date" min="2000-01-01" max="2020-12-31">
+<br> <br>
+
+Select Gender Below:
+<br>  
+  <input type="radio" name="gender" value="male" > Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="others"> Others<br> <br>
+
+FACULTY: 
+<select name="faculty">
+ <option value="select">Select Faculty</option>
+  <option value="natsci">Natural Science</option>
+  <option value="comp">Computing</option>
+  <option value="edu">Education</option>
+  <option value="med">Medical Science</option>
+</select>
+<br>
+<br>
+DEPARTMENT: 
+<select name="department">
+ <option value="select">Select Department</option>
+  <option value="maths">Mathematics</option>
+  <option value="comp">Computer</option>
+  <option value="adm">Admin and Planning</option>
+  <option value="med">Medicine and Surgery</option>
+</select>
+<br>
+<br>
+SESSION: 
+<select name="session">
+ <option value="select">Select Level</option>
+  <option value="2024">2024/2025</option>
+  <option value="2005">2025/2026</option>
+  <option value="2006">2026/2027</option>
+</select>
+<br>
+<br>
+LEVEL: 
+<select name="level">
+ <option value="select">Select Level</option>
+  <option value="100">100</option>
+  <option value="200">200</option>
+  <option value="300">300</option>
+  <option value="400">400</option>
+</select>
+<br>
+<br>
+
+
+Select Your Three Favourites Fruits Below: <br>
+  <input type="checkbox" name="vehicle1" value="Mango"> Mango <br>
+  <input type="checkbox" name="vehicle1" value="Banana"> Banana <br>
+  <input type="checkbox" name="vehicle1" value="Orange"> Orange<br>
+
+<br>
+<label for="courses">Select No. of Courses:</label>
+<input type="number" placeholder="Select"name="quantity" min="1" max="10">
+<br>
+<br>
+  
+    <!-- Where the image will show up -->
+    <div id="previewContainer">
+        <p>UPLOAD PASSPORT:</p>
+
+        <img id="passportPreview" src="#" alt="Your Passport" style="max-width: 100px; display: none; border: 5px solid #3e036e;">
+    </div>
+ <!-- Input for the file -->
+    <input type="file" id="passportInput" accept="image/*">
+
+<br>
+<br>
+
+TERMS AND CONDITION:
+<br>
+
+I <input type="text" placeholder="Enter Your Name Please"> 
+do solemnly agree that all information supplied above about myself
+are true and correct, and that I take responsibility of any mistake 
+or error.
+<br>
+
+  <input type="radio" name="condition" value="agree" > I Agree
+  <input type="radio" name="condition" value="disagree"> I Disagree
+<br>
+<br>
+<a href="">Back To Top</a> <br> <br>
+<input type="submit">
+<input type="reset"> <br>
+
+</form>
+<!--JavaScript to display the passport-->
+    <script>
+        const input = document.getElementById('passportInput');
+        const preview = document.getElementById('passportPreview');
+
+        input.onchange = evt => {
+            const [file] = input.files;
+            if (file) {
+                // This creates a temporary link to the file on the user's computer
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
