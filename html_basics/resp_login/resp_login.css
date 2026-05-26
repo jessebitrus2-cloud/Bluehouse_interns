@@ -1,0 +1,128 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(230,234,234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.container{
+    background: url("sea.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    min-height: 400px;
+    min-width: 350px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+               
+}   
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    color: #fff;
+}            
+.input-container{
+    margin: 30px 30px 10px 30px;
+}
+label{
+    color: #fff;
+    margin: 0 0 5px 15px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+}
+
+input{
+    outline: none;
+    padding: 0 20px 0 20px;
+    border: 2px solid rgba(255,255 0.015);
+    background: rgba(255, 255, 255, 0.35);
+    height: 38px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.085);
+               
+}
+input:focus{
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    background: transparent;
+    box-shadow: none;
+    border-radius: 30px;
+}
+
+.submit{
+    background: transparent;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    box-shadow: none;
+    transition: .3s ease-in-out;
+    
+}
+
+.submit:hover{
+    color: rgb(108, 87, 168);
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.085);
+               
+}
+
+.account{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    
+}
+
+.create{
+    background: transparent;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    box-shadow: none;
+    transition: .3s ease-in-out;
+    width: 100%;
+}
+
+.create:hover{
+    color: rgb(108, 87, 168);
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.085);
+                
+}
+
+span{
+    display: flex;
+    justify-content: center;
+}
+
+span a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.hover_link1{
+   
+    justify-content: center;
+    display: flex;
+}
+
+.marquee{
+    background-color:black;
+    color: #fff;
+    font-style: italic;
+    
+}
