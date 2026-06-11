@@ -1,0 +1,35 @@
+.container {
+    width: 40%;
+    height: 60%;
+    border: solid rgb(211, 201, 201) 2px;
+    border-radius: 8px;
+    padding-top: 20px;
+    margin-top: 5%;
+
+}
+
+h3 {
+    justify-self: center;
+    background-color: lightgray;
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+.sub {
+    padding: 0.3%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: rgb(111, 101, 101);
+   text-align: center;
+   align-items: center;
+}
