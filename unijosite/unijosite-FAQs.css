@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e7e2e2;
+  padding: 0%;
+
+}
+
+
+.top-bar  {
+ background: rgb(54, 107, 220);
+ 
+}
+
+
+.navbar-brand {
+  color: #b4a52d;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+
+.freq {
+  
+  font-family: "Changa One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.text {
+    background: white;
+    width: 800px;
+    height: 50px;
+    justify-self: center;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    margin-top: 25px;
+}
+
+
+
+
+footer {
+  background: #191c26;
+  color: #c9c9c9;
+  padding: 18px 0;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer span {
+  color: #00a9e0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+footer {
+  background: #191c26;
+  color: #c9c9c9;
+  margin-top: 27%;
+  height: 80px;
+ 
+}
+
+.footer-content {
+  background: #191c26;
+  justify-content: space-between;
+  align-items: center;
+  width:800px;
+  height: 60px;
+}
+
+.foot {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 0px;
+ 
+}
+.sup {
+   padding: 20px;
+}
+
+footer p {
+  margin-bottom: 5px;
+  
+}
+
+footer span {
+  color: #f84e05;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
