@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+}
+
+.logo{
+    color:#00bcd4;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#00bcd4;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:60vh;
+    padding:0 8%;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero-text h2{
+    color:#d44300;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#d44700;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+.secondary{
+    background:#222;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+
+/* Social Icons */
+.socials{
+    margin-top:30px;
+}
+
+.socials a{
+    color:#333;
+    font-size:25px;
+    margin-right:20px;
+}
+
+.socials a:hover{
+    color:#00bcd4;
+}
+
+
+/* Footer */
+.footer{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.footer-socials{
+    margin-bottom: 15px;
+}
+
+.footer-socials a{
+    color: white;
+    font-size: 24px;
+    margin: 0 12px;
+    transition: 0.3s;
+}
+
+.footer-socials a:hover{
+    color: #00bcd4;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+/*This is the glow text css*/
+.glow-text-container {
+  background: black;
+}
+
+
+.glow {
+    
+  background: black;
+  width: 100%;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  padding: 1%;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s eae-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 20px 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+/* This is the flip-card section */
+
+.container {
+display: flex;
+flex-direction: row;
+justify-self: center;
+padding: 2%;
+
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(145deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 4%;
+  border: solid black 2px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h1 {
+    justify-self: center;
+    padding: 0.5%;
+}
+
+h3 {
+    justify-self: center;
+    padding: 0.5%;
+}
+
+

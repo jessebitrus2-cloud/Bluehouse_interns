@@ -1,0 +1,123 @@
+/* Remove default spacing */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+}
+
+.logo{
+    color:#00bcd4;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#00bcd4;
+}
+
+h1 {
+    justify-self: center;
+}
+
+h3 {
+    justify-self: center;
+}
+
+
+
+/* Carousel size */
+#myCarousel{
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Resize images */
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+height: 300px;  /* smaller */
+height: 600px;  /* larger */
+
+#myCarousel{
+    position: relative;
+}
+
+.carousel-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    text-align: center;
+    color: white;
+
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+
+    padding: 25px;
+    border-radius: 15px;
+    color: white;
+}
+
+
+
+/* Footer */
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+.footer-socials{
+    margin-bottom:15px;
+}
+
+.footer-socials a{
+    color:white;
+    font-size:24px;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+.footer-socials a:hover{
+    color:#00bcd4;
+}
