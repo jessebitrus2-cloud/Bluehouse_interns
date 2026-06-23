@@ -1,0 +1,184 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+.nav-bar {
+    background-image: url("navbar-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    
+    
+}
+
+img {
+    width: 300px;
+    height: 80px;
+}
+
+.navbar-brand {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  align-self: center;
+  padding-left: 5%;
+  
+}
+
+.container{
+width:100%;
+max-width:500px;
+margin:60px auto;
+border-radius: 10px;
+}
+
+.card{
+background:#fff;
+border:1px solid #ddd;
+padding:25px;
+display: flex;
+flex-direction: row;
+width: 800px;
+border-radius: 10px;
+height: 230px;
+justify-self: center;
+
+}
+
+h3{
+font-size:22px;
+color:#333;
+margin-bottom:10px;
+}
+
+.instruction{
+font-size:18px;
+font-weight:600;
+margin-bottom:20px;
+color:#444;
+padding: 3%;
+width: 500px;
+}
+
+.divider{
+border:none;
+border-top:1px solid #ddd;
+margin:15px 0;
+}
+
+.back-link{
+text-decoration:none;
+color:#337ab7;
+display:inline-block;
+margin-bottom:20px;
+}
+
+.back-link:hover{
+background: gray;
+text-decoration:none;
+color: white;
+
+}
+
+.vertical-line {
+    width: 2px;
+    height: 200px;
+    background-color: rgb(210, 205, 205);
+}
+
+.form {
+    padding: 4%;
+}
+
+.form-group{
+margin-bottom:20px;
+width: 300px;
+
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:bold;
+color:#555;
+}
+
+.required{
+color:red;
+}
+
+input[type="email"]{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:4px;
+font-size:14px;
+}
+
+.btn{
+background:#337ab7;
+color:white;
+border:none;
+padding:10px 25px;
+border-radius:4px;
+cursor:pointer;
+font-size:14px;
+}
+
+.btn:hover{
+background:#286090;
+}
+
+
+footer {
+  background: #191c26;
+  color: #c9c9c9;
+  margin-top: 17%;
+  height: 80px;
+ 
+}
+
+.footer-content {
+  background: #191c26;
+  justify-content: space-between;
+  align-items: center;
+  width:800px;
+  height: 60px;
+}
+
+.foot {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 8px;
+ 
+}
+.sup {
+   padding: 20px;
+}
+
+footer p {
+  margin-bottom: 5px;
+  
+}
+
+footer span {
+  color: #f84e05;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
