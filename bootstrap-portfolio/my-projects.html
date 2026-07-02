@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="my-projects.css">
+</head>
+<body>
+     <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#"><h2 class="logo">JesseDev</h2></a>
+
+        <ul class="nav-links">
+            <li><a href="bootstrap-index.html">Home</a></li>
+            <li><a href="bootstrap-about.html">About Me</a></li>
+            <li><a href="my-skills.html">My Skills</a></li>
+            <li><a href="bootstrap-contact.html">Contact Me</a></li>
+            <li><a href="#">My Projects</a></li>
+        </ul>
+    </nav>
+
+  <div id="myCarousel"
+     class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="3000">
+    
+    <div class="projects">
+        <h1> MY PROJECTS</h1>
+        <h3> Experience the New World</h3>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="unijos-home-image.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="resp-login-image.jpg" class="d-block w-100" alt="">
+        </div>
+
+        <div class="carousel-item">
+            <img src="loging-page-image.jpg" class="d-block w-100" alt="">
+        </div>
+    </div>
+
+    <!-- Previous Button -->
+    <button class="carousel-control-prev" type="button"
+        data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <!-- Next Button -->
+    <button class="carousel-control-next" type="button"
+        data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+
+
+</div>
+
+
+<!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+
+        <p>&copy; 2026 Jesse Bitrus. All Rights Reserved.</p>
+
+    </footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var myCarousel = document.querySelector('#myCarousel');
+
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 3000,
+        ride: 'carousel'
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
