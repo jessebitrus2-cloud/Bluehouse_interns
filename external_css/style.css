@@ -1,0 +1,112 @@
+/* #main-title {
+    color: purple;
+    font-size: 48px;
+    background: none;
+}
+
+.about {
+    
+    background:gray;
+}
+
+p {
+background: green;
+font-style: italic;
+
+} 
+
+a {
+    text-decoration: none;
+    color: orange;
+} */
+
+div {
+    background: red;
+    
+}
+ .aboutt {
+    padding: 20px;
+    background: blue;
+    border: 2px solid black;
+    margin: 20px;
+    margin-top: 10px;
+ }
+
+ .card {
+    display: flex;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    width: auto;
+ }
+ img {
+      background-color: white;
+      border-radius: 10px;
+      width: 385px;
+  }
+
+
+.pro-card {
+    background: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid black;
+    width: 500px;
+    text-decoration: none;
+
+}
+
+a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: black;
+    
+}
+
+h3{
+    color: #f1f1f1;
+    padding: 0 10px 0 10px ;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 10px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 85%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
