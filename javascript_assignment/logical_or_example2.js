@@ -1,0 +1,12 @@
+// Logical OR (||) Operator
+// Example2
+	let i = 1;
+	let j = null;
+	let k = undefined;
+	let l = 0;
+ 
+	console.log(j || k);
+	console.log(i || l);
+ 
+	console.log(Boolean(j || k));
+	console.log(Boolean(i || l));
