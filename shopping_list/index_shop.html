@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JC Climax | Boutique Store</title>
+
+    <link rel="stylesheet" href="style_shop.css">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html">
+        <div class="logo">
+            <div class="logo-icon">JC</div>
+
+            <div class="logo-text">
+                
+                <strong>Climax</strong>
+            </div>
+        </div>
+        </a>
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index_shop.html">Shop</a>
+           
+        </nav>
+
+
+    </header>
+
+
+    <!-- ==============================
+     SHOPPING LIST SECTION
+    ==================================-->
+    <div class="shop-section">
+
+        <div class="container">
+
+            <h1>🛒My Shopping List</h1>
+
+            <p class="subtitle">
+            Add your items and their prices below.
+            </p>
+
+            <!-- Input Section -->
+            <div class="input-section">
+
+                <input
+                    type="text"
+                    id="itemInput"
+                    placeholder="Enter item name"
+                >
+
+                <input
+                    type="number"
+                    id="priceInput"
+                    placeholder="Enter price"
+                    min="0"
+                >
+
+                    <button id="addButton">
+                        Add Item
+                    </button>
+
+            </div>
+
+            <!-- Shopping List -->
+                <div class="list-container">
+
+                    <h2>Shopping Items:-</h2>
+
+                    <ul id="shoppingList"></ul>
+
+                    <p id="emptyMessage">
+                        Your shopping list is empty.
+                    </p>
+
+                </div>
+
+            <!-- Total -->
+                <div class="total-section">
+
+                    <h2>
+                        Total:
+                        <span id="totalPrice">₦0.00</span>
+                    </h2>
+
+                    <button id="clearButton" class="clear-btn">
+                        Clear All
+                    </button>
+
+                </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="index.html">
+                <div class="footer-logo">
+                    <span>J Climax</span>
+                    
+                </div>
+                </a>
+
+                <p>
+                    Fashion that speaks for you.
+                    Style. Quality. Confidence.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="index_shop.html">Shop</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>📍 Nigeria</p>
+                <p>📞 +234 806 868 4778</p>
+                <p>✉️ info@jcclimax.com</p>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">◎</a>
+                    <a href="#">▶</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 JC Climax. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="script_shop.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
