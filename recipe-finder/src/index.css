@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-sage: #1f4d3a;
+  --color-sage-deep: #143328;
+  --color-copper: #c45c3a;
+  --color-copper-bright: #e07a4f;
+  --color-cream: #f7efe4;
+  --color-cream-soft: #fff8f0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #1f4d3a 0%, #c45c3a 100%);
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(196, 92, 58, 0.55);
+  border-radius: 999px;
+}
