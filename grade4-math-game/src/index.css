@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.5) 0 8%, transparent 9%),
+    radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.35) 0 7%, transparent 8%),
+    linear-gradient(135deg, #7c3aed 0%, #ec4899 48%, #22d3ee 100%);
+  background-attachment: fixed;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+.pop-in {
+  animation: popIn 0.35s ease-out both;
+}
+
+.bounce {
+  animation: bounce 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.75);
+  }
+  70% {
+    transform: translateY(-5px) scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0) rotate(-4deg);
+  }
+  to {
+    transform: translateY(-10px) rotate(4deg);
+  }
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  animation: confettiFall 1.5s ease-out forwards;
+}
+
+@keyframes confettiFall {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px) rotate(0deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(220px) rotate(360deg);
+  }
+}
+
+.balloon,
+.flower {
+  position: absolute;
+  bottom: -100px;
+  font-size: 3rem;
+  animation: flyUp 3.5s ease-out forwards;
+}
+
+.flower {
+  font-size: 2.5rem;
+  animation-duration: 3.2s;
+}
+
+.balloon:nth-child(2),
+.flower:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.balloon:nth-child(3),
+.flower:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.balloon:nth-child(4),
+.flower:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.balloon:nth-child(5),
+.flower:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.balloon:nth-child(6),
+.flower:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.balloon:nth-child(7),
+.flower:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+.balloon:nth-child(8) {
+  animation-delay: 1.4s;
+}
+
+@keyframes flyUp {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-50vh) rotate(15deg) scale(1);
+  }
+
+  100% {
+    transform: translateY(-115vh) rotate(-20deg) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.bonus-life-message {
+  animation: bonusPop 0.7s ease-out;
+}
+
+@keyframes bonusPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
